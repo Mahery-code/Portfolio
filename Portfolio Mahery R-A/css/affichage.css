@@ -61,13 +61,23 @@ h2 {
 /* ------------------------------------- Partie du header -------------------------------------- */
 
 header {
-    background-color: #03135aa4;
-    
-    padding: 10px;
+    background-color: #03135a;
+    /*
+    box-shadow: 0px 0px 10px 2px #03135aa4;
+    */
     text-align: 10px;
     margin: 0;
 
+    position : fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* pour passer au-dessus du contenu */
+
     
+}
+.titrep {
+    font-size: 2rem;
 }
 
 header h1 {
@@ -105,14 +115,15 @@ nav ul {
 a {
     color: white;
     text-decoration: none;
-    text-align: right;
     font-size: 1rem;
 }
 
 /* ------------------------------------- Partie du main ---------------------------------------- */
 
 main {
+    margin-top: 120px; /* ajuste selon la hauteur de ton header */
 }
+
 
 .hautpage, .hautpage2    {
     text-align: center;
@@ -184,7 +195,7 @@ main p {
     flex-direction: column;
     align-items: left;
     text-align: left;
-    margin: 0 0 1rem 0;
+    margin: 0 2rem 1rem 0;
 }
 
 .sectionexp {
@@ -214,6 +225,9 @@ main p {
     height: 200px;
 }
 
+.ri {
+    width : 27%
+}
 
 /* ------------------------------------ Partie expérience -------------------------------------- */
 .experience {
@@ -224,8 +238,54 @@ main p {
 .experience section {
     display: flex;
     gap: 1.5rem; /* espace propre entre image et texte */
-    align-items: center;
 }
+
+.so {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #03250be8;
+    box-shadow: 0px 0px 10px 2px #03250be8;
+    border-radius: 15px;
+    margin: 2rem 0 0 0;
+    padding: 1rem 0 2rem 0;
+    height: fit-content;
+    width: 90%;
+    
+}
+
+.sewan {
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 1rem;
+    
+}
+
+.so .textimg    {
+    margin : 0 1rem 0 2rem;
+}
+
+.so img {
+    margin: 0 2rem 2rem 2rem;
+    width: 100%;
+
+}
+
+.so a {
+    text-align: center;
+}
+
+.descimgso{
+align-items: center;
+
+
+}
+/*
+.descimgso .textimg {
+    justify-content: center;
+}
+
+*/
 
 /* ------------------------------------ Partie competences -------------------------------------- */
 
